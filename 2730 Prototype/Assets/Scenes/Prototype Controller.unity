@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 1395479403}
   - component: {fileID: 1395479402}
   - component: {fileID: 1395479401}
+  - component: {fileID: 1395479404}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -194,6 +195,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1395479404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395479400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76806479d916a64aa03f8e3eba7912f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2020223849}
+  distance: 5
+  height: 3
+  rotationDamping: 0
+  heightDamping: 0
 --- !u!1 &1656560394
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +319,7 @@ GameObject:
   - component: {fileID: 2020223847}
   - component: {fileID: 2020223846}
   - component: {fileID: 2020223850}
+  - component: {fileID: 2020223851}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -374,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020223845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.170385, y: 2.21, z: 83.20318}
+  m_LocalPosition: {x: -27.170385, y: 2.21, z: 78.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -396,6 +415,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2020223851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020223845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e954687c09f75cb46be016168d4a043c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2093195133
 GameObject:
   m_ObjectHideFlags: 0
