@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 1395479402}
   - component: {fileID: 1395479401}
   - component: {fileID: 1395479404}
+  - component: {fileID: 1395479405}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -212,6 +213,23 @@ MonoBehaviour:
   height: 3
   rotationDamping: 0
   heightDamping: 0
+--- !u!114 &1395479405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395479400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09815cfdaf9e13c43bed0f6115849606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerTransform: {fileID: 2020223849}
+  shouldRotate: 1
+  rotationSpeed: 5
+  SmoothFactor: 0.5
+  height: 10
 --- !u!1 &1656560394
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +376,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2ee9c3b42d1801a488b55e82ce14ffef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -440,6 +458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9d28be6cfff2249b0d7360da95c435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothTime: 0.3
+  target: {fileID: 0}
 --- !u!1 &2093195133
 GameObject:
   m_ObjectHideFlags: 0

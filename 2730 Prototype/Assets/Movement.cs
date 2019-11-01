@@ -30,5 +30,9 @@ public class Movement : MonoBehaviour
         {
             rb.AddForce(Vector3.back * 4);
         }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * 15);
+        }
     }
 }

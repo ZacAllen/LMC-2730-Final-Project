@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class sizeTimer : MonoBehaviour
 {
-    float x = 0f;
-    float y = 0f;
-    float z = 0f;
+    float x = 0.5f;
+    float y = 0.5f;
+    float z = 0.5f;
 
     public float smoothTime = 0.3f;
     public Transform target;
@@ -30,6 +30,7 @@ public class sizeTimer : MonoBehaviour
         y += 0.0005f;
         z += 0.0005f;
 
+        //doing this wrong
         //player.transform.localScale = Vector3.SmoothDamp(player.transform.localScale,
             //targetSize, ref velocity, smoothTime);
 
