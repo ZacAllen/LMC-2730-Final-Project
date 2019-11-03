@@ -26,9 +26,9 @@ public class sizeTimer : MonoBehaviour
 
         player.transform.localScale = new Vector3(x, y, z);
 
-        x += 0.0005f;
-        y += 0.0005f;
-        z += 0.0005f;
+        x += 0.001f;
+        y += 0.001f;
+        z += 0.001f;
 
         //doing this wrong
         //player.transform.localScale = Vector3.SmoothDamp(player.transform.localScale,
