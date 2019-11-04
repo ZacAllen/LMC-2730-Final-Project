@@ -31,7 +31,7 @@ public class Rotation : MonoBehaviour
 
         if (shouldRotate)
         {
-            Quaternion canTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotationSpeed,
+            Quaternion canTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime,
                    Vector3.up);
             _cameraOffset = canTurnAngle * _cameraOffset;
         }

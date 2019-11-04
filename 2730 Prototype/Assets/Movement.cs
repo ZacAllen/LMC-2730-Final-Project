@@ -4,35 +4,71 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private Rigidbody rb;
+
+    [SerializeField] private float acceleration;
+    [SerializeField] private float rotation;
+    [SerializeField] private float maxSpeed;
+    [SerializeField] private float velocitySmoothing;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private float jumpRayLength;
+
+    private bool jumping;
+    private Vector3 refVel;
+
+    private void Awake()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        if (Input.GetKey(KeyCode.A))
+        // grab inputs
+        Vector2 velIns = new Vector2(0, Input.GetAxis("Vertical"));
+        bool jumpCtrl = Input.GetButtonDown("Jump");
+        float rotIn = Input.GetAxis("Horizontal");
+
+        // check to see if we're on the ground
+        if (jumping && rb.velocity.y < 0)
         {
-            rb.AddForce(Vector3.left * 4);
+            RaycastHit hit;
+            Debug.DrawLine(transform.position, transform.position - Vector3.up * jumpRayLength * transform.localScale.y);
+            if (Physics.Raycast(transform.position, -Vector3.up, out hit, jumpRayLength * transform.localScale.y))
+            {
+                jumping = false;
+            }
         }
-        if (Input.GetKey(KeyCode.W))
+
+        // apply forces to rigidbody
+
+        rb.AddForce((transform.right * velIns.x + transform.forward * velIns.y) * acceleration * Time.deltaTime);
+        if (jumpCtrl && !jumping)
         {
-            rb.AddForce(Vector3.forward * 4);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            jumping = true;
         }
-        if (Input.GetKey(KeyCode.D))
+
+        transform.Rotate(Vector3.up, rotIn * rotation * Time.deltaTime);
+
+        // cap xz velocity
+
+        Vector3 xzVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+
+        if (xzVel.magnitude > maxSpeed)
         {
-            rb.AddForce(Vector3.right * 4);
+            xzVel = xzVel.normalized * maxSpeed;
+            rb.velocity = new Vector3(xzVel.x, rb.velocity.y, xzVel.z);
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            rb.AddForce(Vector3.back * 4);
-        }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            rb.AddForce(Vector3.up * 15);
-        }
+
+        // then smooth xz velocity back to zero
+        rb.velocity = Vector3.SmoothDamp(
+            rb.velocity,
+            new Vector3(0, rb.velocity.y, 0),
+            ref refVel,
+            velocitySmoothing);
+
+
+
     }
 }
