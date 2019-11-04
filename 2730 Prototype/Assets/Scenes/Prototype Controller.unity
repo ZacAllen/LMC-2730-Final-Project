@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8066,7 +8066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerTransform: {fileID: 2020223849}
   shouldRotate: 1
-  rotationSpeed: 5
+  rotationSpeed: 45
   SmoothFactor: 0.5
   height: 10
 --- !u!1 &1396741414
@@ -12131,7 +12131,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &2020223851
 MonoBehaviour:
@@ -12145,6 +12145,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e954687c09f75cb46be016168d4a043c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  acceleration: 2000
+  rotation: 120
+  maxSpeed: 4
+  velocitySmoothing: 0.2
+  jumpForce: 5
+  jumpRayLength: 0.6
 --- !u!114 &2020223852
 MonoBehaviour:
   m_ObjectHideFlags: 0
