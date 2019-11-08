@@ -16,5 +16,6 @@ public class DemoSizeScript : MonoBehaviour
 
         anim.SetFloat("size", size);
         anim.SetBool("crouching", Input.GetKey(KeyCode.Space));
+        anim.SetFloat("forward", Input.GetAxis("Vertical"));
     }
 }
