@@ -11,6 +11,7 @@ public class sizeTimer : MonoBehaviour
     public float smoothTime = 0.3f;
     public Transform target;
     private Vector3 velocity = Vector3.zero;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,18 +22,24 @@ public class sizeTimer : MonoBehaviour
     void Update()
     {
         GameObject player = GameObject.Find("Player");
-        //Vector3 targetSize = new Vector3(1, 1, 1);
-
-
         player.transform.localScale = new Vector3(x, y, z);
 
         x += 0.001f;
         y += 0.001f;
         z += 0.001f;
+    }
 
-        //doing this wrong
-        //player.transform.localScale = Vector3.SmoothDamp(player.transform.localScale,
-            //targetSize, ref velocity, smoothTime);
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "shrinkPotion")
+        {
+            GameObject player = GameObject.Find("Player");
+            x -= 0.7f;
+            y -= 0.7f;
+            z -= 0.7f;
+            player.transform.localScale = new Vector3(x, y, z);
+            Destroy(col.gameObject);
 
+        }
     }
 }
