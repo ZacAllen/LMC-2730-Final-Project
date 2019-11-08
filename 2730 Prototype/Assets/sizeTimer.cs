@@ -41,5 +41,11 @@ public class sizeTimer : MonoBehaviour
             Destroy(col.gameObject);
 
         }
+        else if (col.gameObject.tag == "guard")
+        {
+            //will animate guard later
+            GameObject player = GameObject.Find("Player");
+            Destroy(player);
+        }
     }
 }
