@@ -10,6 +10,11 @@ public class DemoSizeScript : MonoBehaviour
 
     private void Update()
     {
+
+        size += Input.GetAxis("Horizontal") * Time.deltaTime;
+        size = Mathf.Clamp01(size);
+
         anim.SetFloat("size", size);
+        anim.SetBool("crouching", Input.GetKey(KeyCode.Space));
     }
 }
