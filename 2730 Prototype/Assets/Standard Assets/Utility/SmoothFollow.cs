@@ -32,7 +32,7 @@ namespace UnityStandardAssets.Utility
 
 			// Calculate the current rotation angles
 			var wantedRotationAngle = target.eulerAngles.y;
-			var wantedHeight = target.position.y + height;
+			var wantedHeight = target.position.y + height * Mathf.Sqrt(target.localScale.magnitude);
 
 			var currentRotationAngle = transform.eulerAngles.y;
 			var currentHeight = transform.position.y;
@@ -49,7 +49,7 @@ namespace UnityStandardAssets.Utility
 			// Set the position of the camera on the x-z plane to:
 			// distance meters behind the target
 			transform.position = target.position;
-			transform.position -= currentRotation * Vector3.forward * distance;
+			transform.position -= currentRotation * Vector3.forward * distance * Mathf.Sqrt(target.localScale.magnitude);
 
 			// Set the height of the camera
 			transform.position = new Vector3(transform.position.x ,wantedHeight , transform.position.z);

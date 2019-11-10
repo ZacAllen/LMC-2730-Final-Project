@@ -8,25 +8,39 @@ public class sizeTimer : MonoBehaviour
     float y = 0.5f;
     float z = 0.5f;
 
+    [SerializeField] private GameObject player;
+
+    [SerializeField] private float rate;
+
+    [SerializeField] private Animator anim;
+    private float startSize;
+    [SerializeField] private float maxSize;
+
     public float smoothTime = 0.3f;
     public Transform target;
-    private Vector3 velocity = Vector3.zero;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player.transform.localScale = new Vector3(x, y, z);
+
+        startSize = player.transform.localScale.magnitude;
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameObject player = GameObject.Find("Player");
         player.transform.localScale = new Vector3(x, y, z);
 
-        x += 0.001f;
-        y += 0.001f;
-        z += 0.001f;
+        x += rate * Time.deltaTime;
+        y += rate * Time.deltaTime;
+        z += rate * Time.deltaTime;
+
+        float range = maxSize - startSize;
+
+        float percent = 1 - (maxSize - player.transform.localScale.magnitude) / range;
+
+        anim.SetFloat("size", percent);
     }
 
     void OnTriggerEnter(Collider col)

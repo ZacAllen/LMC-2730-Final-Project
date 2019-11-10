@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
 
     private Rigidbody rb;
 
+    [SerializeField] private Animator anim;
+
     [SerializeField] private float acceleration;
     [SerializeField] private float rotation;
     [SerializeField] private float maxSpeed;
@@ -67,6 +69,16 @@ public class Movement : MonoBehaviour
             new Vector3(0, rb.velocity.y, 0),
             ref refVel,
             velocitySmoothing);
+
+
+        // animations
+
+        if (anim)
+        {
+            anim.SetBool("jumping", jumping);
+            anim.SetFloat("forward", velIns.y);
+            anim.SetBool("crouching", Input.GetKey(KeyCode.LeftShift));
+        }
 
 
 
