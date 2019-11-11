@@ -16,6 +16,9 @@ public class Spikes : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        anim.Play("spikes");
+        if (other.CompareTag("Player"))
+        {
+            anim.Play("spikes");
+        }
     }
 }
