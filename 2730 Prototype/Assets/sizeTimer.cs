@@ -40,7 +40,8 @@ public class sizeTimer : MonoBehaviour
 
         float percent = 1 - (maxSize - player.transform.localScale.magnitude) / range;
 
-        anim.SetFloat("size", percent);
+        if (anim)
+            anim.SetFloat("size", percent);
     }
 
     void OnTriggerEnter(Collider col)

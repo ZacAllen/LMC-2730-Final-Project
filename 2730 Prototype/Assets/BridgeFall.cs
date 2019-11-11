@@ -15,7 +15,7 @@ public class BridgeFall : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other)
     {
-        if (other.name.Equals("Player")) {
+        if (other.CompareTag("Player")) {
             falling = true;
         }
     }

@@ -77,7 +77,6 @@ public class Movement : MonoBehaviour
         {
             anim.SetBool("jumping", jumping);
             anim.SetFloat("forward", velIns.y);
-            anim.SetBool("crouching", Input.GetKey(KeyCode.LeftShift));
         }
 
 
