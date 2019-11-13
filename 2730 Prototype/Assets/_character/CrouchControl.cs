@@ -20,12 +20,14 @@ public class CrouchControl : MonoBehaviour
 
         // raycast override
         RaycastHit hit;
-        if (!crouching && Physics.Raycast(rayOrigin.position, Vector3.up, out hit, rayLength))
+        if (!crouching && Physics.Raycast(rayOrigin.position, Vector3.up, out hit, rayLength * transform.lossyScale.magnitude))
         {
             crouching = true;
         }
+        Debug.DrawLine(rayOrigin.position, rayOrigin.position + Vector3.up * rayLength * transform.lossyScale.magnitude);
 
-        anim.SetBool("crouching", Input.GetKey(KeyCode.LeftShift));
+
+        anim.SetBool("crouching", crouching);
 
         if (crouching)
         {
