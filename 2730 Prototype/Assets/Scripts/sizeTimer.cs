@@ -58,9 +58,18 @@ public class sizeTimer : MonoBehaviour
         }
         else if (col.gameObject.tag == "guard")
         {
-            //will animate guard later
             GameObject player = GameObject.Find("Player");
-            Destroy(player);
+            GameObject guard = GameObject.Find("guard temp");
+            GameObject playerCollider = GameObject.Find("collider");
+            //will animate guard later
+            if (playerCollider.GetComponent<Collider>().transform.localScale.z < 1.2f)
+            {
+                Destroy(player);
+            } else
+            {
+                Destroy(guard);
+            }
+            
         }
     }
 }

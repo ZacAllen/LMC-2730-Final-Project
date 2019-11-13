@@ -148,8 +148,6 @@ Cmd: compileSnippet
   api=4 type=1 insize=498 outsize=918 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
 Cmd: preprocessCompute
   insize=2053 outsize=2059 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=2059 outsize=1515 ok=1
 Cmd: preprocess
   insize=11491 outsize=934 ok=1
 Cmd: compileSnippet
@@ -192,6 +190,8 @@ Cmd: compileComputeKernel
   api=4 insize=3070 outsize=47803 ok=1
 Cmd: preprocessCompute
   insize=10871 outsize=10881 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10881 outsize=9684 ok=1
 Cmd: preprocess
   insize=1181 outsize=305 ok=1
 Cmd: compileSnippet
@@ -265,9 +265,9 @@ Cmd: compileSnippet
 Cmd: preprocessCompute
   insize=18277 outsize=18299 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=18299 outsize=8653 ok=1
+  api=4 insize=18299 outsize=8518 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=18299 outsize=10338 ok=1
+  api=4 insize=18299 outsize=10714 ok=1
 Cmd: preprocess
   insize=3209 outsize=790 ok=1
 Cmd: compileSnippet
@@ -347,7 +347,7 @@ Cmd: compileComputeKernel
 Cmd: preprocessCompute
   insize=1800 outsize=1806 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=1806 outsize=1385 ok=1
+  api=4 insize=1806 outsize=561 ok=1
 Cmd: preprocess
   insize=1606 outsize=221 ok=1
 Cmd: compileSnippet
