@@ -43,8 +43,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Jumpsuit
+    second: {fileID: 2100000, guid: fc51794db556c5a4ba3a06decd052915, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Skin
     second: {fileID: 2100000, guid: 4b7d75d3be56ed64ab7264bec8862ad4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: belt
+    second: {fileID: 2100000, guid: d2387b9e73415f34784db75ba674674e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
