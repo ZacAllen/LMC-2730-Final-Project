@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: highlight
-    second: {fileID: 2100000, guid: a2ca4d4ba1fa90447952a8355414ebc0, type: 2}
+    second: {fileID: 2100000, guid: 6ae07d743ecbb084391eb3d65a58ee77, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

@@ -56,6 +56,15 @@ namespace UnityStandardAssets.Utility
 
 			// Always look at the target
 			transform.LookAt(target);
+
+            // raytrace to make sure there's no geometry between camera and follow transform
+
+            RaycastHit hit;
+
+            if (Physics.Raycast(target.transform.position, (transform.position - target.transform.position), out hit, (transform.position - target.transform.position).magnitude))
+            {
+                transform.position = hit.point;
+            }
 		}
 	}
 }
