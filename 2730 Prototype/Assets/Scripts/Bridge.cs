@@ -14,6 +14,14 @@ public class Bridge : MonoBehaviour
         for (int i = 0; i < fallingBlocks.Length; i++)
         {
             createTrigger(fallingBlocks[i]);
+            // visual
+            DullTile dt = fallingBlocks[i].GetComponent<DullTile>();
+            if (dt)
+            {
+                dt.SetDull();
+            }
+
+
         }
     }
 

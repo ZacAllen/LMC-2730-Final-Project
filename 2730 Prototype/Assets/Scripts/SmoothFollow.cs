@@ -10,18 +10,22 @@ namespace UnityStandardAssets.Utility
 		private Transform target;
 		// The distance in the x-z plane to the target
 		[SerializeField]
-		private float distance = 10.0f;
+        private float distance = 10f;
+        [SerializeField] private float yScale;
 		// the height we want the camera to be above the target
 		[SerializeField]
-		private float height = 5.0f;
-
+		private Vector2 heights = new Vector2(0.1f, 1);
+        private float height;
 		[SerializeField]
 		private float rotationDamping;
 		[SerializeField]
 		private float heightDamping;
 
 		// Use this for initialization
-		void Start() { }
+		void Start()
+        {
+            height = heights.x;
+        }
 
 		// Update is called once per frame
 		void LateUpdate()
@@ -29,6 +33,11 @@ namespace UnityStandardAssets.Utility
 			// Early out if we don't have a target
 			if (!target)
 				return;
+
+            // vertical scrolling
+            height += Input.GetAxis("Mouse Y") * yScale * Time.deltaTime;
+            height = Mathf.Clamp(height, heights.x, heights.y);
+
 
 			// Calculate the current rotation angles
 			var wantedRotationAngle = target.eulerAngles.y;

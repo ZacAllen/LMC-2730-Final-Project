@@ -892,11 +892,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -967,6 +962,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.091224276
       objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
 --- !u!4 &7973685726284635431 stripped
@@ -982,11 +987,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1057,6 +1057,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.091224276
       objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
 --- !u!4 &7503498681478521798 stripped
@@ -1072,11 +1082,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1147,6 +1152,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.091224276
       objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
 --- !u!4 &6400504897675786155 stripped
@@ -1162,11 +1177,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1237,6 +1247,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.091224276
       objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
 --- !u!4 &5209649469252255637 stripped
@@ -1252,11 +1272,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1327,6 +1342,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.091224276
       objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
 --- !u!4 &2104162715908752956 stripped
@@ -1342,11 +1367,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1417,6 +1437,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.091224276
       objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
 --- !u!4 &1685447423105449748 stripped
@@ -1432,11 +1462,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1507,6 +1532,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.091224276
       objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
 --- !u!4 &630338184488590705 stripped
@@ -1522,11 +1557,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1597,6 +1627,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.091224276
       objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
 --- !u!4 &273480239350910072 stripped
@@ -1612,11 +1652,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2771371543563264012}
     m_Modifications:
-    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
-        type: 3}
-      propertyPath: m_Name
-      value: Lightning Spike (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 9192728498444126381, guid: 0a6181dbb9391c24c98cd174898f5972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1686,6 +1721,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.091224276
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192728498444126380, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_Name
+      value: Lightning Spike (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054432545640911135, guid: 0a6181dbb9391c24c98cd174898f5972,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6181dbb9391c24c98cd174898f5972, type: 3}
