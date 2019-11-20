@@ -155,9 +155,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 5906642303402807276}
   anim: {fileID: 8793327673198583374}
-  acceleration: 1000
+  acceleration: 2000
   rotation: 120
-  maxSpeed: 5
+  maxSpeed: 4
   velocitySmoothing: 0.2
   jumpForce: 5
   jumpRayLength: 0.8
