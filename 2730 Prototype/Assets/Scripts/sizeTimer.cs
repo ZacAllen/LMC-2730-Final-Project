@@ -42,6 +42,8 @@ public class sizeTimer : MonoBehaviour
 
         if (anim)
             anim.SetFloat("size", percent);
+        
+        
     }
 
     void OnTriggerEnter(Collider col)
@@ -59,7 +61,7 @@ public class sizeTimer : MonoBehaviour
         else if (col.gameObject.tag == "guard")
         {
             GameObject player = GameObject.Find("Player");
-            GameObject guard = GameObject.Find("guard temp");
+            //GameObject guard = GameObject.Find("guard temp");
             GameObject playerCollider = GameObject.Find("collider");
             //will animate guard later
             if (playerCollider.GetComponent<Collider>().transform.localScale.z < 1.2f)
@@ -67,7 +69,7 @@ public class sizeTimer : MonoBehaviour
                 Destroy(player);
             } else
             {
-                Destroy(guard);
+                Destroy(col.gameObject);
             }
             
         }
