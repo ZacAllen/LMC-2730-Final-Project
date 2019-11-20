@@ -85,7 +85,7 @@ public class Movement : MonoBehaviour
 
             Vector3 movement = Vector3.Scale(direction, new Vector3(1, 0, 1));
 
-            rb.AddForce(movement * acceleration * Time.deltaTime);
+            rb.AddForce(movement * acceleration * Mathf.Sqrt(transform.localScale.x) * Time.deltaTime);
             rb.MoveRotation(Quaternion.LookRotation(movement.normalized, Vector3.up));   
 
         }
@@ -93,7 +93,7 @@ public class Movement : MonoBehaviour
 
         if (jumpCtrl && !jumping)
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpForce * Mathf.Sqrt(transform.localScale.x), ForceMode.Impulse);
             jumping = true;
         }
 
