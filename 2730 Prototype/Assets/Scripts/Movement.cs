@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
 
     private Rigidbody rb;
 
+    [SerializeField] private Transform camera;
+
     [SerializeField] private Animator anim;
 
     [SerializeField] private float acceleration;
@@ -28,9 +30,11 @@ public class Movement : MonoBehaviour
     void Update()
     {
         // grab inputs
-        Vector2 velIns = new Vector2(0, Input.GetAxis("Vertical"));
+        Vector2 velIns = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        bool moving = velIns.magnitude > 0.05f;
+        //float rotation = Vector2.Angle(Vector2.up, velIns);
+
         bool jumpCtrl = Input.GetButtonDown("Jump");
-        float rotIn = Input.GetAxis("Horizontal");
 
 
         // determine if we're jumping
@@ -75,15 +79,25 @@ public class Movement : MonoBehaviour
         }
 
         // apply forces to rigidbody
+        if (moving)
+        {
+            Vector3 direction = camera.TransformDirection(new Vector3(velIns.x, 0, velIns.y));
 
-        rb.AddForce((transform.right * velIns.x + transform.forward * velIns.y) * acceleration * Time.deltaTime);
+            Vector3 movement = Vector3.Scale(direction, new Vector3(1, 0, 1));
+
+            rb.AddForce(movement * acceleration * Time.deltaTime);
+            rb.MoveRotation(Quaternion.LookRotation(movement.normalized, Vector3.up));   
+
+        }
+
+
         if (jumpCtrl && !jumping)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             jumping = true;
         }
 
-        transform.Rotate(Vector3.up, rotIn * rotation * Time.deltaTime);
+        //transform.Rotate(Vector3.up, rotIn * rotation * Time.deltaTime);
 
         // cap xz velocity
 
@@ -108,7 +122,7 @@ public class Movement : MonoBehaviour
         if (anim)
         {
             anim.SetBool("jumping", jumping);
-            anim.SetFloat("forward", velIns.y);
+            anim.SetFloat("forward", velIns.magnitude);
         }
 
 
