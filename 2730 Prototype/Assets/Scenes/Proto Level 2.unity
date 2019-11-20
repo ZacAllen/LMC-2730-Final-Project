@@ -1566,6 +1566,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5906642303238170605, guid: 856c13afce777f041b7175819c004208,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1656060539}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 856c13afce777f041b7175819c004208, type: 3}
 --- !u!1001 &1089671811
@@ -2816,6 +2821,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 14.029253, y: 9.843384, z: 2.4149342}
   m_Center: {x: 0.14738779, y: -0.05895834, z: 0.23582691}
+--- !u!4 &1656060539 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5906642303402807276, guid: 856c13afce777f041b7175819c004208,
+    type: 3}
+  m_PrefabInstance: {fileID: 1017759356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1799146670
 PrefabInstance:
   m_ObjectHideFlags: 0
