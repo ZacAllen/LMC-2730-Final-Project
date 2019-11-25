@@ -38,9 +38,9 @@ public class Rotation : MonoBehaviour
 
         Vector3 newPos = PlayerTransform.position + _cameraOffset;
 
-        transform.position = Vector3.Slerp(transform.position, newPos, SmoothFactor);
+        transform.position = Vector3.Slerp(transform.position, newPos, SmoothFactor * Time.deltaTime);
 
-        if (shouldRotate)
+        if (shouldRotate && Time.timeScale > 0f)
         {
             //update height
             transform.position = new Vector3(transform.position.x, currentHeight, transform.position.z);
