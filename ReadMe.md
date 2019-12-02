@@ -1,18 +1,5 @@
-## Simple site: Easy websites with GitHub pages
+hankquinlan.github.io
+=====================
+This is demo data created by [Jonathan McGlone](http://jmcglone.com) and used in a [step-by-step beginners guide](http://jmcglone.com/guides/github-pages) to creating and hosting a personal website using GitHub and Jekyll. You can view the demo data at <http://hankquinlan.github.io> and read the guide at <http://jmcglone.com/guides/github-pages>. 
 
-[Github Pages](https://pages.github.com) provide a simple way to make a
-website using Markdown and git.
-
-This is a minimal tutorial to get started.
-
-View the thing [here](https://kbroman.org/simple_site).
-
----
-
-To the extent possible under law,
-[Karl Broman](https://github.com/kbroman)
-has waived all copyright and related or neighboring rights to
-&ldquo;[simple site](https://github.com/kbroman/simple_site)&rdquo;.
-This work is published from the United States.
-<br/>
-[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+Users are free to copy and re-use any and all of the code contained here without contacting me.
