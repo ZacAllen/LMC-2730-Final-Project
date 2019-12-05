@@ -5,9 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class GameMenu : MonoBehaviour
 {
+
+    public void LoadMain()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
     public void LoadLevelSelect()
     {
         SceneManager.LoadScene("Level Select");
+    }
+
+    public void LoadInstructions()
+    {
+        SceneManager.LoadScene("Instructions");
     }
 
     public void LoadOptions()
