@@ -23,9 +23,14 @@ public class RotateCamera : MonoBehaviour
     private void Awake()
     {
         distance = (transform.position - lookAt.position).magnitude;
-        tracker = new GameObject("camera tracker").transform;
 
         vertical = vClamp.x + vClamp.y / 2f;
+    }
+
+    private void Start()
+    {
+        tracker = new GameObject("camera tracker").transform;
+
     }
 
     private void Update()

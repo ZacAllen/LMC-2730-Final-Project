@@ -11,9 +11,19 @@ public class CrouchControl : MonoBehaviour
     [SerializeField] private Collider standingCollider;
     [SerializeField] private Collider crouchingCollider;
 
+    private bool ready;
+
+    public void Init()
+    {
+        ready = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
+
+        if (!ready)
+            return;
 
         // user input to control crouching
         bool crouching = Input.GetKey(KeyCode.LeftShift);

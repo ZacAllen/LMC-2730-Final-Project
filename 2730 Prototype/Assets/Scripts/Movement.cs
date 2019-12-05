@@ -22,13 +22,22 @@ public class Movement : MonoBehaviour
     private bool jumping;
     private Vector3 refVel;
 
+    private bool ready;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
 
+    public void Init()
+    {
+        ready = true;
+    }
+
     void Update()
     {
+        if (!ready)
+            return;
         // grab inputs
         Vector2 velIns = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         bool moving = velIns.magnitude > 0.05f;
