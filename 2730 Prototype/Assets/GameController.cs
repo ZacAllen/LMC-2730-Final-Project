@@ -39,14 +39,14 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void Pause()
+    public void Pause()
     {
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         pauseCanvas.enabled = true;
     }
 
-    private void UnPause()
+    public void UnPause()
     {
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
@@ -73,8 +73,14 @@ public class GameController : MonoBehaviour
 
 
     // completely resets the scene since nothing depends on stats
-    private void Reset()
+    public void ReloadThisScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void GoToScene(string x)
+    {
+        SceneManager.LoadScene(x);
+    }
+
 }
