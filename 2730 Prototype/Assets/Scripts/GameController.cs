@@ -100,7 +100,8 @@ public class GameController : MonoBehaviour
     // completely resets the scene since nothing depends on stats
     public void ReloadThisScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("reload");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void GoToScene(string x)
