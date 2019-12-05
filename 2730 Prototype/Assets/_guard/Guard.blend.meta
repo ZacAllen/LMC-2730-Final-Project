@@ -1,54 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 9944a078724f8a2468570e918270cf57
-=======
-guid: 9582bd2e02e874544bb5c4340ea60140
->>>>>>> d032fb3b49a46b9bf8eac6c4b97a80aaab7df773
+guid: 514a4ae736607da46be3aebe112ce1ab
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
-  - first:
-      74: -8945691123924629249
-    second: Armature|Idle
-  - first:
-      74: 1079665108409675491
-    second: Armature|Jump
-  - first:
-      74: 8970833319722948074
-    second: Armature|Jumping
-  - first:
-      74: 8620290089931133710
-    second: Armature|Look_Down
-  - first:
-      74: -9132860056023732702
-    second: Armature|Look_Up
-  - first:
-      74: -189839362310923164
-    second: Armature|Run_Left_Unarmed
-  - first:
-      74: 2342416020544474505
-    second: Armature|Run_Right_Unarmed
-  - first:
-      74: 6048357042602278185
-    second: Armature|Run_Unarmed
-  - first:
-      74: -7209796856873519316
-    second: Armature|Strafe_Left_Unarmed
-  - first:
-      74: -2158275106766973072
-    second: Armature|Strafe_Right_Unarmed
-  - first:
-      74: -8258996780291451000
-    second: Armature|T Pose
-  - first:
-      74: 8981236371984108601
-    second: Armature|Walk_Left_Unarmed
-  - first:
-      74: -5119999875278106696
-    second: Armature|Walk_Right_Unarmed
-  - first:
-      74: -3570217579774149765
-    second: Armature|Walk_Unarmed
   - first:
       74: 1054934157000725445
     second: GUARD|Idle
@@ -550,8 +504,8 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
