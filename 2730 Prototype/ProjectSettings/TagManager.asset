@@ -6,6 +6,8 @@ TagManager:
   tags:
   - shrinkPotion
   - guard
+  - laser
+  - big guard
   layers:
   - Default
   - TransparentFX

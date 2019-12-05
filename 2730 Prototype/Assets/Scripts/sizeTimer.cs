@@ -19,6 +19,8 @@ public class sizeTimer : MonoBehaviour
     public float smoothTime = 0.3f;
     public Transform target;
 
+    private bool ready = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +29,18 @@ public class sizeTimer : MonoBehaviour
         startSize = player.transform.localScale.magnitude;
     }
 
+    public void Init()
+    {
+        ready = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (!ready)
+            return;
+
+
         player.transform.localScale = new Vector3(x, y, z);
 
         x += rate * Time.deltaTime;
@@ -66,12 +77,37 @@ public class sizeTimer : MonoBehaviour
             //will animate guard later
             if (playerCollider.GetComponent<Collider>().transform.localScale.z < 1.2f)
             {
-                Destroy(player);
+                FindObjectOfType<GameController>().Lose();
+                //Destroy(player);
             } else
+            {
+                // TODO: add an explosion effect
+                col.gameObject.GetComponentInChildren<ExplosionEffect>().Explode();
+                //Destroy(col.gameObject);
+            }
+            
+        }
+        else if (col.gameObject.tag == "big guard")
+        {
+            GameObject player = GameObject.Find("Player");
+            
+            GameObject playerCollider = GameObject.Find("collider");
+            
+            if (playerCollider.GetComponent<Collider>().transform.localScale.z < 2.5f)
+            {
+                Destroy(player);
+            }
+            else
             {
                 Destroy(col.gameObject);
             }
-            
+
+        }
+        else if (col.gameObject.tag == "laser")
+        {
+            GameObject player = GameObject.Find("Player");
+            Destroy(player);
+
         }
     }
 }
