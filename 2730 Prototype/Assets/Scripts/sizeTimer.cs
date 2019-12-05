@@ -73,5 +73,27 @@ public class sizeTimer : MonoBehaviour
             }
             
         }
+        else if (col.gameObject.tag == "big guard")
+        {
+            GameObject player = GameObject.Find("Player");
+            
+            GameObject playerCollider = GameObject.Find("collider");
+            
+            if (playerCollider.GetComponent<Collider>().transform.localScale.z < 2.5f)
+            {
+                Destroy(player);
+            }
+            else
+            {
+                Destroy(col.gameObject);
+            }
+
+        }
+        else if (col.gameObject.tag == "laser")
+        {
+            GameObject player = GameObject.Find("Player");
+            Destroy(player);
+
+        }
     }
 }
