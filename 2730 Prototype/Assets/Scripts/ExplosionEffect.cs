@@ -12,7 +12,6 @@ public class ExplosionEffect : MonoBehaviour
 
     public void Explode()
     {
-        Debug.Log("exploding");
         system.Play();
         StartCoroutine(KillMe());
     }

@@ -387,6 +387,36 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level Select
       objectReference: {fileID: 0}
+    - target: {fileID: 1642730183080349771, guid: 76d16c4ee3d21c348a68e57f807f44ac,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642730183080349771, guid: 76d16c4ee3d21c348a68e57f807f44ac,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642730183080349771, guid: 76d16c4ee3d21c348a68e57f807f44ac,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642730183080349771, guid: 76d16c4ee3d21c348a68e57f807f44ac,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7179494111529516272}
+    - target: {fileID: 1642730183080349771, guid: 76d16c4ee3d21c348a68e57f807f44ac,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadThisScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642730183080349771, guid: 76d16c4ee3d21c348a68e57f807f44ac,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76d16c4ee3d21c348a68e57f807f44ac, type: 3}
 --- !u!4 &3747404694322442162 stripped
