@@ -30,11 +30,17 @@ public class RotateCamera : MonoBehaviour
     private void Start()
     {
         tracker = new GameObject("camera tracker").transform;
+        Application.targetFrameRate = 30;
 
     }
 
     private void Update()
     {
+        Debug.Log(Application.targetFrameRate);
+        Application.targetFrameRate += Input.GetKeyDown(KeyCode.X) ? 1 : 0;
+        Application.targetFrameRate -= Input.GetKeyDown(KeyCode.Z) ? 1 : 0;
+
+
         tracker.position = lookAt.position - Vector3.forward * distance * scale.localScale.x;
         tracker.RotateAround(lookAt.position, Vector3.right, vertical);
 
