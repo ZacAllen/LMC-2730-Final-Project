@@ -55,6 +55,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: belt
     second: {fileID: 2100000, guid: d2387b9e73415f34784db75ba674674e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes
+    second: {fileID: 2100000, guid: b90dfa7125aad41498a517acefc959c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pupils
+    second: {fileID: 2100000, guid: b140f0a34da233245ab8a9a50381c9fc, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

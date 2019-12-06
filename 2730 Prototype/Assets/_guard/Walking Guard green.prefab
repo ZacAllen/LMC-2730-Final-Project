@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7090076070322529475}
   - component: {fileID: 7771017775206863225}
+  - component: {fileID: 955269609}
   m_Layer: 0
   m_Name: Walking Guard green
   m_TagString: guard
@@ -47,6 +48,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: -0.2, z: 0}
+--- !u!114 &955269609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3556653366005516567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b27e24929a78545aec43c946fc909b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 0}
 --- !u!1 &8811039334611533577
 GameObject:
   m_ObjectHideFlags: 0
@@ -4836,11 +4850,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guard
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 514a4ae736607da46be3aebe112ce1ab,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 7ffe77801d11ed547aaf3a557a042cca, type: 2}
     - target: {fileID: -4216859302048453862, guid: 514a4ae736607da46be3aebe112ce1ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4911,6 +4920,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 514a4ae736607da46be3aebe112ce1ab,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7ffe77801d11ed547aaf3a557a042cca, type: 2}
     - target: {fileID: 5763195896615145373, guid: 514a4ae736607da46be3aebe112ce1ab,
         type: 3}
       propertyPath: m_LocalRotation.x

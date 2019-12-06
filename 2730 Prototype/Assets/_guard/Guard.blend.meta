@@ -50,12 +50,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Armor
-    second: {fileID: 2100000, guid: 6c3655f55f49ad046b67d75a99d042db, type: 2}
+    second: {fileID: 2100000, guid: 06f1ce0814189904099a915d9b47106d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cylinders
-    second: {fileID: 2100000, guid: 0d31f6d15ef45e648870d6ac7d9c64f0, type: 2}
+    second: {fileID: 2100000, guid: c1aef6f8a8339a54b805830f96d00c5e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
